@@ -2,21 +2,83 @@
     margin: 0 auto;
     position: fixed;
     width: 100%;
+    font-family: sans-serif;
+    box-shadow: 0 0 8px 8px rgba(0,0,0,7%);
 
     &__banner {
         padding: 5px 0px;
         font-family: sans-serif;
-        font-size: 20px;
-        font-weight: 600;
+        font-size: 18px;
+        font-weight: 500;
         color: white;
         height: 20px;
         text-align: center;
         background: linear-gradient(.25turn, #632ca6, 60%, #2F80ED)
     }
-    &__logoContainer {
-        text-align: center;
-        &__logo {
+
+    &__main {
+        margin: 15px auto;
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        place-items: center;
+        
+        // all uls
+        ul {
+            display: flex;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 600;
+            color: #555;
+
+            li {
+                list-style-type: none;
+                padding-left: 0px;
+                padding: 5px 10px;
+            }
+        }
+
+        // to the left of logo
+        &__left {
+            ul {
+                align-items: center;
+            }
+        }
+
+        // logo
+        &__logoContainer {
             height: 100px;
+            width: 100px;
+            overflow: hidden;
+            &__logo {
+                width: 160px;
+                height: 160px;
+                margin-left: -30px;
+                margin-top: -25px;
+            }
+        }
+
+        // to the right of logo
+        &__right {
+            ul {
+                align-items: center;
+            }
+            &__getStarted {
+                button {
+                    align-content: center;
+                    background-color: white;
+                    border-width: 1px;
+                    border-color: #2F80ED;
+                    // border-color: linear-gradient(.25turn, #632ca6, 60%, #2F80ED);
+                    border-radius: 5px;
+                    padding: 15px 25px;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: #555;
+                }
+            }
         }
     }
+
 }
