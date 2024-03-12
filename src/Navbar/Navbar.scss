@@ -1,0 +1,22 @@
+.Navbar {
+    margin: 0 auto;
+    position: fixed;
+    width: 100%;
+
+    &__banner {
+        padding: 5px 0px;
+        font-family: sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+        height: 20px;
+        text-align: center;
+        background: linear-gradient(.25turn, #632ca6, 60%, #2F80ED)
+    }
+    &__logoContainer {
+        text-align: center;
+        &__logo {
+            height: 100px;
+        }
+    }
+}
