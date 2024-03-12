@@ -27,14 +27,17 @@ const Navbar = () => {
                         <li>About</li>
                         <li>Blog</li>
                         <li>Login</li>
-                        <li><FaMagnifyingGlass /></li>
-                        <li className="Navbar__main__right__getStarted">
-                            <button>Get Started Free</button>
+                        <li className="Navbar__main__right__searchToggle">
+                            <FaMagnifyingGlass/>
+                        </li>
+                        <li className="Navbar__main__right__start">
+                            <button className="Navbar__main__right__start__getStarted">Get Started Free</button>
+                            <button className="Navbar__main__right__start__freeTrial">Free Trial</button>
                         </li>
                     </ul>
                 </div>
             </div>
-		</div>
+        </div>
 	);
 };
 

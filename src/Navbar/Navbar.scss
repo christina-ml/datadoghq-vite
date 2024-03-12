@@ -1,4 +1,6 @@
+// desktop view is 1200px width
 .Navbar {
+    z-index: 10;
     margin: 0 auto;
     position: fixed;
     width: 100%;
@@ -63,22 +65,53 @@
             ul {
                 align-items: center;
             }
-            &__getStarted {
+            &__searchToggle {
+                font-size: 18px;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            &__start {
+                &__freeTrial {
+                    display: none;
+                }
                 button {
                     align-content: center;
                     background-color: white;
                     border-width: 1px;
                     border-color: #2F80ED;
-                    // border-color: linear-gradient(.25turn, #632ca6, 60%, #2F80ED);
+                    
                     border-radius: 5px;
                     padding: 15px 25px;
                     text-transform: uppercase;
                     font-size: 14px;
                     font-weight: 600;
                     color: #555;
+                    &:hover {
+                        background: linear-gradient(45deg,#c024b6 0%,#3023ae 100%);
+                        color: white;
+                        cursor: pointer;
+                    }
                 }
             }
         }
     }
+}
 
+// Medium screen size
+@media screen and (min-width: 675px) and (max-width: 975px) {
+    .Navbar {
+        &__main {
+            &__right {
+                &__start {
+                    &__freeTrial {
+                        display: block;
+                    }
+                    &__getStarted {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 }
