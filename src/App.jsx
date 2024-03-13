@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.scss";
 import Navbar from "./Navbar/Navbar";
 import { TfiClose } from "react-icons/tfi";
+import Home from "./Home/Home";
 
 function App() {
     const [isSearchBarActive, setIsSearchBarActive] = useState(false);     
@@ -27,6 +28,7 @@ function App() {
                 </button>
             </span>
             }
+            <Home />
 		</>
 	);
 }
